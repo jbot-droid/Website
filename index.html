@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Paper Box Co. | More Than A Box Company</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0F172A', // Slate 900
+                            dark: '#1E293B', // Slate 800
+                            accent: '#D97706', // Amber 600
+                            gold: '#F59E0B', // Amber 500
+                            cream: '#F8FAFC', // Slate 50
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Modern scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d97706;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-slate-800 font-sans">
+
+    <!-- Top Utility Announcement Bar -->
+    <div class="bg-brand-deep text-slate-300 py-2.5 px-4 text-xs md:text-sm border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-brand-gold font-medium">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-gold animate-pulse"></span>
+                    Est. 1922 • Over a Century of Quality
+                </span>
+                <span class="hidden md:inline text-slate-400">|</span>
+                <span class="hidden md:inline">500,000 Sq. Ft. Manufacturing Capacity</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:1-323-750-2550" class="flex items-center gap-1.5 hover:text-white font-semibold transition-colors">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i>
+                    Call 1-323-750-2550
+                </a>
+                <span class="text-slate-500">|</span>
+                <span class="flex items-center gap-1 text-emerald-400">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    ISO 9001 & G7 Certified
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Premium Header / Navigation (Using z-[999] and pointer-events-auto for persistent overlay safety) -->
+    <header class="sticky top-0 z-[999] pointer-events-auto bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Modernized Iconic Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-12 h-12 flex-shrink-0">
+                    <!-- Accurate original-inspired 3D Isometric box structure in vector SVG -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full transform group-hover:scale-105 transition-transform duration-300">
+                        <!-- Top Left Cube Face -->
+                        <polygon points="50,15 15,35 50,55 85,35" fill="#0F172A" />
+                        <polygon points="50,18 20,35 50,52 80,35" fill="#ffffff" />
+                        <!-- Parallel lines inside top face to match old-school logo texture -->
+                        <line x1="28" y1="31" x2="58" y2="48" stroke="#0F172A" stroke-width="2" />
+                        <line x1="36" y1="27" x2="66" y2="44" stroke="#0F172A" stroke-width="2" />
+                        <line x1="44" y1="23" x2="74" y2="40" stroke="#0F172A" stroke-width="2" />
+
+                        <!-- Bottom Left Block -->
+                        <polygon points="15,35 50,55 50,90 15,70" fill="#0F172A" />
+                        <!-- White Inner/Offset for isometric outline -->
+                        <polygon points="20,40 45,55 45,83 20,68" fill="#ffffff" />
+                        <line x1="25" y1="50" x2="25" y2="72" stroke="#0F172A" stroke-width="2" />
+                        <line x1="30" y1="53" x2="30" y2="75" stroke="#0F172A" stroke-width="2" />
+                        <line x1="35" y1="56" x2="35" y2="78" stroke="#0F172A" stroke-width="2" />
+                        <line x1="40" y1="59" x2="40" y2="81" stroke="#0F172A" stroke-width="2" />
+
+                        <!-- Bottom Right Block -->
+                        <polygon points="50,55 85,35 85,70 50,90" fill="#0F172A" />
+                        <!-- White Inner/Offset -->
+                        <polygon points="55,55 80,40 80,68 55,83" fill="#ffffff" />
+                        <line x1="60" y1="56" x2="60" y2="78" stroke="#0F172A" stroke-width="2" />
+                        <line x1="65" y1="53" x2="65" y2="75" stroke="#0F172A" stroke-width="2" />
+                        <line x1="70" y1="50" x2="70" y2="72" stroke="#0F172A" stroke-width="2" />
+                        <line x1="75" y1="47" x2="75" y2="69" stroke="#0F172A" stroke-width="2" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-lg md:text-xl tracking-tight text-slate-900 leading-none">ADVANCE</h1>
+                    <p class="text-[10px] md:text-xs text-slate-500 font-bold uppercase tracking-widest mt-0.5">Paper Box Co.</p>
+                </div>
+            </a>
+
+            <!-- Central Slogan: Reimagining the old "More than a box company" -->
+            <div class="hidden lg:flex flex-col items-center justify-center">
+                <span class="text-xs uppercase tracking-widest text-slate-400 font-semibold italic">More than a</span>
+                <span class="text-2xl font-serif text-brand-accent tracking-wider font-extrabold -mt-1">box company</span>
+            </div>
+
+            <!-- Desktop Navigation Links with hash directs -->
+            <nav class="hidden md:flex items-center gap-1.5 lg:gap-3">
+                <a href="#products" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-all">Products</a>
+                <a href="#die-line" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-all">Interactive Die-Line</a>
+                <a href="#calculator" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-all">Calculator</a>
+                <a href="#consultant" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-all flex items-center gap-1.5">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                    </span>
+                    AI Advisor
+                </a>
+                <a href="#sustainability" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-all">Sustainability</a>
+                <a href="#contact" class="ml-2 px-4 py-2 text-sm font-bold text-white bg-slate-900 hover:bg-brand-accent rounded-lg shadow-md transition-all">Get Quote</a>
+            </nav>
+
+            <!-- Mobile Navigation Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-700 hover:text-brand-accent hover:bg-slate-50 rounded-lg transition-colors">
+                <i id="menuIcon" data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-3 space-y-2">
+            <a href="#products" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">Products & Services</a>
+            <a href="#die-line" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">Die-Line Visualizer</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">Quote Calculator</a>
+            <a href="#consultant" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-lg text-brand-accent font-bold">AI Packaging Advisor</a>
+            <a href="#sustainability" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">Sustainability Commitment</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-center mt-4 px-4 py-2.5 text-base font-bold text-white bg-slate-900 rounded-lg shadow-md">Request Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Content Area inside standard overflow wrapper (Ensures Scroll-stretching doesn't break header stickiness) -->
+    <main class="overflow-x-clip block">
+        
+        <!-- Modern Hero Section with Interactive Graphics -->
+        <section class="relative bg-gradient-to-br from-brand-deep to-slate-800 text-white overflow-hidden py-20 lg:py-32">
+            <!-- Abstract geometric grid pattern background representing box designs -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <!-- Radial ambient glow -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-gold rounded-full opacity-10 blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-700 rounded-full opacity-20 blur-3xl"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    <!-- Left: Hero Text Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-bold tracking-widest text-brand-gold uppercase">
+                            <i data-lucide="crown" class="w-3.5 h-3.5"></i> Est. 1922 • Serving America's Brands
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                            More Than Just A Box. <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-400 to-amber-200">
+                                Packaging Perfected.
+                            </span>
+                        </h1>
+                        <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                            With over 500,000 square feet of state-of-the-art facilities, 250+ dedicated packaging experts, and a century-long legacy, we turn custom-designed paperboard and thermoplastics into your strongest marketing assets.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#calculator" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-slate-900 bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-500 hover:to-brand-gold rounded-xl shadow-lg hover:shadow-brand-gold/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="calculator" class="w-5 h-5"></i>
+                                Estimate Pricing Now
+                            </a>
+                            <a href="#die-line" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="box" class="w-5 h-5"></i>
+                                Design Structurally
+                            </a>
+                        </div>
+
+                        <!-- Trust Stats Ribbon -->
+                        <div class="grid grid-cols-3 gap-4 pt-10 border-t border-slate-700/60 max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <div class="text-3xl font-extrabold text-brand-gold">100+</div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Years Active</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-extrabold text-white">500k</div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Sq. Ft. Plant</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-extrabold text-white">250+</div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Union Artisans</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Visual Wireframe Box Animation & Live Blueprint Mockup -->
+                    <div class="lg:col-span-5 relative flex justify-center">
+                        <div class="w-full max-w-[420px] bg-slate-900/60 border border-slate-700/50 rounded-2xl p-6 shadow-2xl relative overflow-hidden backdrop-blur-md">
+                            <!-- Blueprint grid pattern inside visual card -->
+                            <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+                            
+                            <div class="relative z-10 space-y-4">
+                                <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                    <span class="text-xs font-mono text-brand-gold tracking-widest uppercase">Structural CAD Mockup</span>
+                                    <div class="flex gap-1.5">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Animated isometric wireframe box -->
+                                <div class="h-64 flex items-center justify-center relative">
+                                    <svg class="w-48 h-48 animate-pulse text-brand-gold" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <!-- Rotating effect simulated via CSS scale and keyframe -->
+                                        <g transform="translate(50,50) scale(0.85) translate(-50,-50)">
+                                            <!-- Top face wireframe -->
+                                            <polygon points="50,15 15,35 50,55 85,35" stroke-dasharray="4" stroke="#D97706" />
+                                            <!-- Bottom face wireframe -->
+                                            <polygon points="50,55 15,75 50,95 85,75" stroke="#D97706" />
+                                            <!-- Vertical connection lines -->
+                                            <line x1="15" y1="35" x2="15" y2="75" stroke="#F59E0B" />
+                                            <line x1="50" y1="55" x2="50" y2="95" stroke="#F59E0B" />
+                                            <line x1="85" y1="35" x2="85" y2="75" stroke="#F59E0B" stroke-dasharray="2" />
+                                            
+                                            <!-- Interior guide lines/dimensions -->
+                                            <line x1="50" y1="15" x2="50" y2="55" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3" />
+                                            <path d="M15,55 L32.5,45 M85,55 L67.5,45" stroke="#10B981" stroke-dasharray="2" />
+                                        </g>
+                                    </svg>
+                                    <!-- Interactive Tag overlays -->
+                                    <div class="absolute top-4 left-4 bg-slate-800/90 text-slate-300 text-[10px] font-mono py-1 px-2 rounded border border-slate-700">W: 12.00"</div>
+                                    <div class="absolute bottom-4 right-4 bg-slate-800/90 text-slate-300 text-[10px] font-mono py-1 px-2 rounded border border-slate-700">L: 14.50"</div>
+                                    <div class="absolute bottom-8 left-6 bg-slate-800/90 text-slate-300 text-[10px] font-mono py-1 px-2 rounded border border-slate-700">D: 4.25"</div>
+                                </div>
+
+                                <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 flex justify-between items-center">
+                                    <div>
+                                        <div class="text-[10px] text-slate-500 font-mono">FINISH PREVIEW</div>
+                                        <div class="text-xs font-semibold text-white">Matte Soft Touch + Gold Foil</div>
+                                    </div>
+                                    <div class="bg-amber-500/10 text-brand-gold text-[10px] font-bold px-2 py-1 rounded border border-brand-accent/20">
+                                        PREMIUM GRADE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Panel -->
+        <section class="bg-white py-12 border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-8">Strict Quality & Environmental Standards Met daily</p>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center">
+                    
+                    <!-- ISO 9001 -->
+                    <div class="flex flex-col items-center text-center p-3 hover:scale-105 transition-transform">
+                        <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-brand-accent mb-2">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-sm text-slate-800">ISO 9001</span>
+                        <span class="text-[10px] text-slate-400">Quality Management</span>
+                    </div>
+
+                    <!-- FSC Certified -->
+                    <div class="flex flex-col items-center text-center p-3 hover:scale-105 transition-transform">
+                        <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 mb-2">
+                            <i data-lucide="leaf" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-sm text-slate-800">FSC® Certified</span>
+                        <span class="text-[10px] text-slate-400">Forest Stewardship Council</span>
+                    </div>
+
+                    <!-- G7 Master Printer -->
+                    <div class="flex flex-col items-center text-center p-3 hover:scale-105 transition-transform">
+                        <div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 mb-2">
+                            <i data-lucide="printer" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-sm text-slate-800">G7 Master Colors</span>
+                        <span class="text-[10px] text-slate-400">Perfect Ink Calibrations</span>
+                    </div>
+
+                    <!-- Carbon Neutral Initiative -->
+                    <div class="flex flex-col items-center text-center p-3 hover:scale-105 transition-transform">
+                        <div class="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center text-teal-600 mb-2">
+                            <i data-lucide="globe" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-sm text-slate-800">Carbon Neutral</span>
+                        <span class="text-[10px] text-slate-400">Eco-Minded Operations</span>
+                    </div>
+
+                    <!-- Union Facility (ABP Proud) -->
+                    <div class="flex flex-col items-center text-center p-3 col-span-2 md:col-span-1 hover:scale-105 transition-transform">
+                        <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-brand-gold mb-2">
+                            <i data-lucide="users" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-sm text-slate-800">100% US Union</span>
+                        <span class="text-[10px] text-slate-400">Skilled Labor Guild</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Product & Category Showroom -->
+        <section id="products" class="scroll-mt-24 py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold tracking-widest text-brand-accent uppercase bg-amber-50 px-3 py-1 rounded-full">Our Capabilities</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Custom Packaging Made For Your Specific Industry</h2>
+                    <p class="text-slate-600 font-light text-lg">
+                        Select a category below to explore custom structures, materials, custom finishes, and our specialized design parameters.
+                    </p>
+                </div>
+
+                <!-- Showcase Grid with Interactive Sidebar and Showcase Card -->
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Category Selectors (Left / Top) -->
+                    <div class="lg:col-span-4 space-y-2">
+                        <p class="text-xs font-extrabold uppercase text-slate-400 tracking-wider mb-3 px-3">Product Categories</p>
+                        <div class="grid grid-cols-2 lg:grid-cols-1 gap-2">
+                            <!-- Navigation Item 1 -->
+                            <button onclick="setActiveProduct('cosmetics')" id="tab-cosmetics" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-amber-50 text-brand-accent flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Cosmetics & Beauty</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Upscale and foil finishes</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 2 -->
+                            <button onclick="setActiveProduct('folding')" id="tab-folding" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="package" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Folding Cartons</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Custom die-cuts & windows</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 3 -->
+                            <button onclick="setActiveProduct('rigid')" id="tab-rigid" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="box" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Setup & Rigid Boxes</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Heavyweight luxury cases</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 4 -->
+                            <button onclick="setActiveProduct('pharmaceutical')" id="tab-pharmaceutical" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="activity" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Pharmaceutical</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Strict safety & compliance</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 5 -->
+                            <button onclick="setActiveProduct('food')" id="tab-food" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="apple" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Food & Candy</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Safe, contamination-free</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 6 -->
+                            <button onclick="setActiveProduct('entertainment')" id="tab-entertainment" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="film" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Entertainment & Tech</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Software, games & rigid slipcases</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 7 -->
+                            <button onclick="setActiveProduct('soap')" id="tab-soap" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="droplet" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Candle & Soap</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">High-aesthetic structural designs</span>
+                                </div>
+                            </button>
+
+                            <!-- Navigation Item 8 -->
+                            <button onclick="setActiveProduct('plastics')" id="tab-plastics" class="product-tab flex items-center gap-3 p-4 rounded-xl text-left font-bold text-sm transition-all bg-white border border-slate-200/80 hover:border-brand-accent text-slate-700 shadow-sm">
+                                <span class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="layers" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <div class="font-bold">Thermal Plastics</div>
+                                    <span class="text-[10px] font-normal text-slate-400 hidden lg:block">Clamshells, inserts & blisters</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Display Panel (Right) -->
+                    <div class="lg:col-span-8 bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+                        <!-- Gradient accent bars -->
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-gold to-brand-accent"></div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Left Side of Card: Details & Features -->
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <span id="showcase-badge" class="text-xs font-bold px-2.5 py-1 rounded bg-amber-50 text-brand-accent inline-block uppercase">COSMETICS</span>
+                                    <h3 id="showcase-title" class="text-2xl md:text-3xl font-extrabold text-slate-900">Health & Beauty Luxury Boxes</h3>
+                                    <p id="showcase-description" class="text-slate-600 text-sm md:text-base font-light leading-relaxed">
+                                        Advance Paper Box is a leader in designing and producing upscale packaging for major cosmetics brands. Our award-winning packaging designs are completely customizable to fit the unique look and dimensional demands of your high-end brand line.
+                                    </p>
+                                </div>
+
+                                <!-- Bulleted Capabilities List -->
+                                <div class="space-y-2">
+                                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Available Features</h4>
+                                    <ul id="showcase-features" class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs md:text-sm text-slate-700">
+                                        <!-- Dynamic list of specs -->
+                                    </ul>
+                                </div>
+
+                                <!-- Certifications Specific to active type -->
+                                <div class="border-t border-slate-100 pt-4">
+                                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Recommended Paperboard</div>
+                                    <div id="showcase-recommendation" class="text-xs text-slate-600 font-semibold bg-slate-50 py-2 px-3 rounded-lg border border-slate-100 flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 flex-shrink-0"></i>
+                                        <span>Premium SBS (Solid Bleached Sulfate) • 16pt - 24pt</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side of Card: Custom Interactive Graphic Structure Preview -->
+                            <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                                <!-- Background Graph Lines -->
+                                <div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:20px_20px] opacity-40"></div>
+                                
+                                <div class="relative z-10 flex justify-between items-center text-xs font-mono text-slate-400 border-b border-slate-200/60 pb-3">
+                                    <span>APB STRUCTURAL PREVIEW</span>
+                                    <span id="showcase-spec" class="text-brand-accent">100% Recyclable</span>
+                                </div>
+
+                                <!-- Big beautiful SVG Illustration of specific box styles -->
+                                <div id="showcase-visual-container" class="relative z-10 h-60 flex items-center justify-center py-4">
+                                    <!-- Dynamic SVGs injected here depending on the category -->
+                                </div>
+
+                                <div class="relative z-10 text-center">
+                                    <!-- Custom button automatically applies and configures cost estimation selections -->
+                                    <button onclick="applyStructureToCalculator()" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-accent hover:text-amber-700 transition-colors bg-white hover:bg-slate-100 py-2.5 px-4 rounded-xl shadow-sm border border-slate-200/60">
+                                        Calculate this structure cost
+                                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Section: Dynamic CAD Box Builder (Live Die-Line Visualizer) -->
+        <section id="die-line" class="scroll-mt-24 py-20 bg-slate-900 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold tracking-widest text-brand-gold uppercase bg-white/10 px-3 py-1 rounded-full">Interactive Tools</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Interactive Structural CAD Die-Line</h2>
+                    <p class="text-slate-300 font-light text-lg">
+                        Adjust the sliders below to dynamically resize a custom box pattern (flat die-line blueprint). See exactly how manufacturing dimensions impact material calculations.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Sliders Controls (Left Panel) -->
+                    <div class="lg:col-span-4 bg-slate-800/80 border border-slate-700/60 rounded-3xl p-6 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-2 border-b border-slate-700 pb-3">
+                                <i data-lucide="sliders" class="w-5 h-5 text-brand-gold"></i>
+                                <h3 class="font-extrabold text-lg text-white">Dimension Controls</h3>
+                            </div>
+
+                            <!-- Length Slider -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm font-semibold">
+                                    <label for="slide-length" class="text-slate-300 flex items-center gap-1">
+                                        <i data-lucide="arrow-left-right" class="w-4 h-4 text-brand-gold"></i> Length (A)
+                                    </label>
+                                    <span class="text-brand-gold font-mono text-base font-bold"><span id="val-length">10.0</span>"</span>
+                                </div>
+                                <input type="range" id="slide-length" min="5" max="25" step="0.5" value="10" 
+                                       class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-gold"
+                                       oninput="updateDieline()">
+                                <span class="text-[10px] text-slate-400 block">Typical range: 5.0" to 25.0"</span>
+                            </div>
+
+                            <!-- Width Slider -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm font-semibold">
+                                    <label for="slide-width" class="text-slate-300 flex items-center gap-1">
+                                        <i data-lucide="arrow-up-down" class="w-4 h-4 text-brand-gold"></i> Width (B)
+                                    </label>
+                                    <span class="text-brand-gold font-mono text-base font-bold"><span id="val-width">6.0</span>"</span>
+                                </div>
+                                <input type="range" id="slide-width" min="3" max="15" step="0.5" value="6" 
+                                       class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-gold"
+                                       oninput="updateDieline()">
+                                <span class="text-[10px] text-slate-400 block">Typical range: 3.0" to 15.0"</span>
+                            </div>
+
+                            <!-- Depth Slider -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm font-semibold">
+                                    <label for="slide-depth" class="text-slate-300 flex items-center gap-1">
+                                        <i data-lucide="expand" class="w-4 h-4 text-brand-gold"></i> Depth (C)
+                                    </label>
+                                    <span class="text-brand-gold font-mono text-base font-bold"><span id="val-depth">4.0</span>"</span>
+                                </div>
+                                <input type="range" id="slide-depth" min="2" max="10" step="0.5" value="4" 
+                                       class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-gold"
+                                       oninput="updateDieline()">
+                                <span class="text-[10px] text-slate-400 block">Typical range: 2.0" to 10.0"</span>
+                            </div>
+                        </div>
+
+                        <!-- Live Calculation readout -->
+                        <div class="mt-8 pt-6 border-t border-slate-700/60 space-y-3">
+                            <div class="flex justify-between items-center text-xs text-slate-400">
+                                <span>Estimated Flat Die Area:</span>
+                                <span class="font-mono text-white font-semibold" id="val-die-area">0 sq in</span>
+                            </div>
+                            <div class="flex justify-between items-center text-xs text-slate-400">
+                                <span>Box Type Structure:</span>
+                                <span class="text-brand-gold font-bold uppercase">Standard Tuck-End Carton</span>
+                            </div>
+                            <div class="flex justify-between items-center text-xs text-slate-400">
+                                <span>Optimal Press Feed Weight:</span>
+                                <span class="text-white">18pt Clay-Coated (CCNB)</span>
+                            </div>
+                            <div class="bg-amber-500/10 rounded-xl p-3 border border-amber-500/20 text-[11px] text-slate-300 flex items-start gap-2 mt-4">
+                                <i data-lucide="info" class="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5"></i>
+                                <p>Changing these dimensions live updates the manufacturing die layout on the right. Green paths show cutting lines, blue paths show folding scores, red represents dust flaps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Canvas/SVG Blueprint Render (Right Panel) -->
+                    <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between min-h-[500px]">
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                                <span class="text-xs font-mono text-slate-300">Live CAD Die-Line Feed (Inches scale)</span>
+                            </div>
+                            <div class="flex gap-4 text-[10px] font-mono">
+                                <span class="flex items-center gap-1"><span class="w-3 h-0.5 bg-emerald-500 inline-block"></span> Cut</span>
+                                <span class="flex items-center gap-1"><span class="w-3 h-0.5 bg-blue-500 stroke-dasharray-1 inline-block"></span> Fold Score</span>
+                                <span class="flex items-center gap-1"><span class="w-3 h-0.5 bg-red-500 inline-block"></span> Flaps</span>
+                            </div>
+                        </div>
+
+                        <!-- Blueprint SVG area -->
+                        <div class="flex-grow flex items-center justify-center p-4">
+                            <svg id="blueprint-svg" class="w-full max-w-lg h-80 transition-all duration-300 text-slate-600" viewBox="0 0 500 350">
+                                <!-- Dynamically generated through updateDieline() script -->
+                            </svg>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-3">
+                            <span class="text-xs text-slate-400 italic">Structural Integrity Tested & Ready to Run</span>
+                            <a href="#contact" class="px-5 py-2.5 text-xs font-bold text-slate-950 bg-brand-gold hover:bg-white rounded-xl transition-all shadow-md">
+                                Submit Dimensions For Prototyping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multi-Step Interactive Packaging Quote Calculator -->
+        <section id="calculator" class="scroll-mt-24 py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 space-y-4">
+                    <span class="text-xs font-bold tracking-widest text-brand-accent uppercase bg-amber-50 px-3 py-1 rounded-full">Costing Wizard</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900">Custom Packaging Cost Estimator</h2>
+                    <p class="text-slate-600 font-light">Get an immediate, high-fidelity budget estimate based on style, quantity, materials, and specialty processes.</p>
+                </div>
+
+                <!-- Interactive Pricing App Card -->
+                <div class="bg-brand-cream border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-xl space-y-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left: Pricing Options -->
+                        <div class="space-y-6">
+                            <!-- Step 1: Packaging Style -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-bold text-slate-700 flex items-center gap-1.5">
+                                    <i data-lucide="package" class="w-4 h-4 text-brand-accent"></i> 1. Choose Box Style
+                                </label>
+                                <select id="calc-style" onchange="calculatePrice()" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                    <option value="folding">Folding Carton (Standard Product Packaging)</option>
+                                    <option value="rigid">Rigid / Setup Box (High-End Gift & Boxset)</option>
+                                    <option value="thermo">Thermoformed Plastic (Clamshells & Blisters)</option>
+                                    <option value="corrugated">E-Commerce Mailing Box</option>
+                                </select>
+                            </div>
+
+                            <!-- Step 2: Product Fit Category -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-bold text-slate-700 flex items-center gap-1.5">
+                                    <i data-lucide="tag" class="w-4 h-4 text-brand-accent"></i> 2. Target Industry / Finishes
+                                </label>
+                                <select id="calc-industry" onchange="calculatePrice()" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                    <option value="general">General Retail (Classic Gloss / Matte Coating)</option>
+                                    <option value="cosmetic">Cosmetic Luxury (Foil Stamp, Acetate Windows, Premium Cardboard)</option>
+                                    <option value="pharma">Pharmaceutical (Strict Certified Materials, Safety Controls)</option>
+                                    <option value="food">Food-Safe Grade (Barrier Protective Coatings, Soy Inks)</option>
+                                </select>
+                            </div>
+
+                            <!-- Step 3: Material Preference -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-bold text-slate-700 flex items-center gap-1.5">
+                                    <i data-lucide="leaf" class="w-4 h-4 text-emerald-600"></i> 3. Sustainability Grade
+                                </label>
+                                <select id="calc-material" onchange="calculatePrice()" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                    <option value="standard">Standard Board (SFI Certified Sustainable Base)</option>
+                                    <option value="recycled">100% Recycled Post-Consumer Waste (FSC® Certified)</option>
+                                    <option value="premium">Ultra-Bright SBS Board (Maximum Ink Pop & Rigidity)</option>
+                                </select>
+                            </div>
+
+                            <!-- Step 4: Volume / Quantity (Critical scale pricing) -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm font-bold">
+                                    <label for="calc-qty" class="text-slate-700 flex items-center gap-1.5">
+                                        <i data-lucide="hash" class="w-4 h-4 text-brand-accent"></i> 4. Quantity (Volume Scale)
+                                    </label>
+                                    <span class="text-brand-accent font-mono font-extrabold" id="lbl-qty">5,000 pcs</span>
+                                </div>
+                                <input type="range" id="calc-qty" min="500" max="50000" step="500" value="5000" 
+                                       class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-accent"
+                                       oninput="calculatePrice()">
+                                <div class="flex justify-between text-[10px] text-slate-400 font-mono mt-1">
+                                    <span>500 (Prototype)</span>
+                                    <span>5k (Production)</span>
+                                    <span>50k+ (Enterprise Volume)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Dynamic Real-time Invoice Breakdown -->
+                        <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between shadow-sm relative">
+                            <div class="space-y-4">
+                                <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+                                    <h3 class="font-extrabold text-sm uppercase tracking-wider text-slate-400">Estimate Summary</h3>
+                                    <span class="bg-brand-gold/10 text-brand-accent text-[10px] font-bold py-1 px-2 rounded uppercase tracking-wider">Estimated FOB LA</span>
+                                </div>
+
+                                <!-- Cost Items List -->
+                                <div class="space-y-2.5 text-xs font-medium">
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-500">Base Manufacturing Unit Cost:</span>
+                                        <span id="invoice-base" class="font-mono text-slate-800 font-bold">$0.00</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-500">Specialty Industry Coating:</span>
+                                        <span id="invoice-industry" class="font-mono text-slate-800 font-bold">$0.00</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-500">Material Selection Surcharge:</span>
+                                        <span id="invoice-material" class="font-mono text-slate-800 font-bold">$0.00</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-slate-500">Volume Bulk Multiplier Discount:</span>
+                                        <span id="invoice-discount" class="font-mono text-emerald-600 font-bold">0%</span>
+                                    </div>
+                                </div>
+
+                                <!-- Final Calculations Panel -->
+                                <div class="border-t border-slate-100 pt-4 mt-4 space-y-2">
+                                    <div class="flex justify-between items-baseline">
+                                        <span class="text-sm font-bold text-slate-800">Unit Price:</span>
+                                        <span id="lbl-unit-price" class="text-2xl font-extrabold text-brand-accent font-mono">$0.00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline pt-1">
+                                        <span class="text-base font-bold text-slate-900">Total Project Est:</span>
+                                        <span id="lbl-total-price" class="text-3xl font-extrabold text-slate-900 font-mono">$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA to reserve this Quote -->
+                            <div class="mt-6 pt-4 border-t border-slate-100 space-y-3">
+                                <button onclick="applyQuoteToContact()" class="w-full py-3.5 bg-slate-900 hover:bg-brand-accent text-white font-bold rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                    Lock & Submit Request
+                                </button>
+                                <p class="text-[10px] text-slate-400 text-center">FOB Los Angeles. Estimates exclude physical plate/die tooling fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemini-Powered AI Packaging Consultant -->
+        <section id="consultant" class="scroll-mt-24 py-20 bg-slate-900 text-white relative">
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <defs>
+                        <pattern id="circ" width="30" height="30" patternUnits="userSpaceOnUse">
+                            <circle cx="15" cy="15" r="1" fill="white" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#circ)" />
+                </svg>
+            </div>
+
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                    <span class="text-xs font-bold tracking-widest text-brand-gold uppercase bg-white/10 px-3 py-1 rounded-full">Expert System</span>
+                    <h2 class="text-3xl font-extrabold">Instant AI Packaging Advisor</h2>
+                    <p class="text-slate-300 font-light">
+                        Have questions about G7 printing certifications, paperboard weights, folding structures, or custom die cuts? Ask APEX, our virtual AI engineer.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800 border border-slate-700/60 rounded-3xl overflow-hidden shadow-2xl flex flex-col h-[550px]">
+                    <!-- Chat Panel Header -->
+                    <div class="bg-slate-950 px-6 py-4 border-b border-slate-800 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div class="relative">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-accent flex items-center justify-center text-brand-gold">
+                                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                                </div>
+                                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-slate-950"></span>
+                            </div>
+                            <div>
+                                <h3 class="font-extrabold text-sm text-white">APEX Consultant</h3>
+                                <p class="text-[10px] text-slate-400">Advance Paper Box Expert System • Online</p>
+                            </div>
+                        </div>
+                        <div class="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Powered by Gemini</div>
+                    </div>
+
+                    <!-- Chat History Window -->
+                    <div id="chatHistory" class="flex-grow p-6 overflow-y-auto space-y-4">
+                        <!-- Bot greeting -->
+                        <div class="flex items-start gap-3 max-w-[85%]">
+                            <div class="w-8 h-8 rounded-full bg-slate-950 flex items-center justify-center flex-shrink-0 text-brand-gold border border-slate-800">
+                                <i data-lucide="cpu" class="w-4 h-4"></i>
+                            </div>
+                            <div class="bg-slate-950/60 text-slate-300 p-4 rounded-2xl rounded-tl-none border border-slate-800 text-sm space-y-2">
+                                <p>Hello! I am APEX, your technical packaging assistant at Advance Paper Box. Since 1922, we've manufactured millions of cartons here in Southern California.</p>
+                                <p>What can I advise you on today?</p>
+                                <div class="flex flex-wrap gap-2 pt-1">
+                                    <button onclick="sendPrefillQuestion('What is the difference between SBS and CCNB cardboard?')" class="text-[11px] bg-slate-900 hover:bg-brand-accent hover:text-white text-slate-300 py-1 px-2.5 rounded-lg border border-slate-700/80 transition-colors">SBS vs CCNB Paperboard</button>
+                                    <button onclick="sendPrefillQuestion('How does G7 color calibration help my brand packaging?')" class="text-[11px] bg-slate-900 hover:bg-brand-accent hover:text-white text-slate-300 py-1 px-2.5 rounded-lg border border-slate-700/80 transition-colors">G7 Master Printing benefits</button>
+                                    <button onclick="sendPrefillQuestion('What are setup boxes used for?')" class="text-[11px] bg-slate-900 hover:bg-brand-accent hover:text-white text-slate-300 py-1 px-2.5 rounded-lg border border-slate-700/80 transition-colors">Setup/Rigid Packaging specs</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Tray -->
+                    <div class="bg-slate-950/80 p-4 border-t border-slate-800 flex items-center gap-3">
+                        <input type="text" id="chatInput" placeholder="Ask about materials, structural design, minimum runs, G7 printing..." 
+                               class="flex-grow bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-accent placeholder-slate-500"
+                               onkeydown="if(event.key === 'Enter') handleSendChat()">
+                        <button onclick="handleSendChat()" id="btnSendChat" class="bg-brand-accent hover:bg-brand-gold text-slate-950 p-3 rounded-xl transition-all shadow-md flex-shrink-0">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Sustainability Section -->
+        <section id="sustainability" class="scroll-mt-24 py-20 bg-brand-cream border-t border-slate-200/40 relative overflow-hidden">
+            <!-- Leaf decoration pattern background element -->
+            <div class="absolute top-0 right-0 p-10 opacity-5 pointer-events-none">
+                <i data-lucide="leaf" class="w-80 h-80 text-emerald-800"></i>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Left: Interactive Carbon-Neutral / FSC Info panels -->
+                    <div class="space-y-6">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 px-3 py-1 rounded-full">Environmental Stewards</span>
+                            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Green Packaging For A Better Tomorrow</h2>
+                            <p class="text-slate-600 font-light text-lg">
+                                Since 1922, we have continually invested in modern techniques to safeguard environmental health. Our paperboard supplies support conscious forestry.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- FSC Standard -->
+                            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 flex gap-4 hover:shadow-md transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 flex-shrink-0">
+                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-slate-900 text-base">FSC® & SFI® Sourcing Certified</h3>
+                                    <p class="text-slate-500 text-sm font-light mt-1">
+                                        Every custom run offers verified Chain-of-Custody materials sourced under strict sustainable guidelines that promote re-forestation and preserve biological diversity.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Carbon Offsets -->
+                            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 flex gap-4 hover:shadow-md transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 flex-shrink-0">
+                                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-slate-900 text-base">State-of-the-art Carbon Offsets</h3>
+                                    <p class="text-slate-500 text-sm font-light mt-1">
+                                        Our Southern California manufacturing facility actively balances energy outputs through green energy procurement and carbon credit programs for certified carbon neutrality.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Non-Toxic Water Base Soy Ink -->
+                            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 flex gap-4 hover:shadow-md transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 flex-shrink-0">
+                                    <i data-lucide="sparkles" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-slate-900 text-base">Organic, Bio-Degradable Soy Inks</h3>
+                                    <p class="text-slate-500 text-sm font-light mt-1">
+                                        We rely on organic, volatile organic compound (VOC) free vegetable-based printing inks to produce rich, high-end colors on our 8-color speedmaster presses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Visual Eco Meter interactive panel -->
+                    <div class="bg-slate-900 text-white rounded-3xl p-8 shadow-2xl space-y-6 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
+                        
+                        <div class="relative z-10 border-b border-slate-800 pb-4">
+                            <span class="text-xs font-mono text-brand-gold uppercase tracking-wider">ECO IMPACT CALCULATOR</span>
+                            <h3 class="text-xl font-extrabold mt-1">Select Box Weight to test Environmental Savings</h3>
+                        </div>
+
+                        <!-- Interactive sliders to calculate trees saved -->
+                        <div class="relative z-10 space-y-5">
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-300">Run Quantity:</span>
+                                    <span class="font-bold text-brand-gold font-mono" id="eco-lbl-qty">10,000 units</span>
+                                </div>
+                                <input type="range" id="eco-qty" min="1000" max="100000" step="5000" value="10000" 
+                                       class="w-full h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-gold"
+                                       oninput="calculateEcoImpact()">
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-300">Material Selection:</span>
+                                    <span class="font-bold text-brand-gold" id="eco-lbl-mat">100% Recycled Kraft</span>
+                                </div>
+                                <select id="eco-mat" onchange="calculateEcoImpact()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2 text-xs text-slate-300">
+                                    <option value="recycled">100% Recycled Post-Consumer Material</option>
+                                    <option value="standard">Standard Kraft (50% recycled / SFI)</option>
+                                    <option value="sbs">SBS Premium Cardboard (Sustainable Sourced Virgin Fibers)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Calculated Result panel -->
+                        <div class="relative z-10 bg-slate-950/80 border border-slate-800/80 rounded-2xl p-5 grid grid-cols-2 gap-4">
+                            <div class="text-center p-2 border-r border-slate-800">
+                                <span class="text-slate-400 text-[10px] uppercase font-bold tracking-widest block">Trees Preserved</span>
+                                <span class="text-3xl font-extrabold text-emerald-400 block font-mono mt-1" id="eco-saved-trees">12.5</span>
+                                <span class="text-[10px] text-slate-500 font-light block">Calculated forests saved</span>
+                            </div>
+                            <div class="text-center p-2">
+                                <span class="text-slate-400 text-[10px] uppercase font-bold tracking-widest block">CO₂ Reduced</span>
+                                <span class="text-3xl font-extrabold text-brand-gold block font-mono mt-1" id="eco-saved-carbon">1.2 Tons</span>
+                                <span class="text-[10px] text-slate-500 font-light block">Emissions avoided</span>
+                            </div>
+                        </div>
+
+                        <p class="text-[10px] text-slate-400 font-light italic text-center relative z-10">Calculated utilizing standards provided by the Environmental Paper Network Paper Calculator v4.0.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Standard Contact Section & Request Quote Form -->
+        <section id="contact" class="scroll-mt-24 py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+                    <!-- Info Section Left -->
+                    <div class="lg:col-span-5 space-y-8 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="space-y-2">
+                                <span class="text-xs font-bold tracking-widest text-brand-accent uppercase bg-amber-50 px-3 py-1 rounded-full">Get In Touch</span>
+                                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">Let's Design Your Next Package</h2>
+                                <p class="text-slate-600 font-light leading-relaxed">
+                                    Get in touch directly with our Southern California structural designers. We are standing by to engineer, print, and fulfill your custom boxes.
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Direct Call -->
+                                <a href="tel:13237502550" class="flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-50 border border-transparent hover:border-slate-100 transition-all">
+                                    <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-brand-accent flex-shrink-0">
+                                        <i data-lucide="phone" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">Main Office Line</h4>
+                                        <p class="text-slate-500 text-sm mt-0.5">Call 1-323-750-2550</p>
+                                    </div>
+                                </a>
+
+                                <!-- Address Location -->
+                                <div class="flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-50 border border-transparent hover:border-slate-100 transition-all">
+                                    <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-brand-accent flex-shrink-0">
+                                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">Manufacturing Headquarters</h4>
+                                        <p class="text-slate-500 text-sm mt-0.5">Los Angeles, California Facility</p>
+                                    </div>
+                                </div>
+
+                                <!-- Fulfillment capacity -->
+                                <div class="flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-50 border border-transparent hover:border-slate-100 transition-all">
+                                    <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-brand-accent flex-shrink-0">
+                                        <i data-lucide="package-check" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">Fulfillment Capacity</h4>
+                                        <p class="text-slate-500 text-sm mt-0.5">Over 500,000 square feet warehousing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Historical Stamp badge -->
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100/80 flex items-center gap-4">
+                            <i data-lucide="award" class="w-10 h-10 text-brand-gold flex-shrink-0"></i>
+                            <p class="text-xs text-slate-500 font-light">
+                                <strong>Over a Century of Trust:</strong> Advance Paper Box Co. has supported consumer manufacturers with Union-represented packaging products since our doors opened in 1922.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Custom Quote form Right -->
+                    <div class="lg:col-span-7 bg-brand-cream border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-xl">
+                        <form id="contactForm" onsubmit="submitContactForm(event)" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-bold uppercase text-slate-500" for="form-name">Contact Person</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe" 
+                                           class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-bold uppercase text-slate-500" for="form-company">Company Name</label>
+                                    <input type="text" id="form-company" required placeholder="My Brand Inc." 
+                                           class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-bold uppercase text-slate-500" for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" required placeholder="john@mybrand.com" 
+                                           class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-bold uppercase text-slate-500" for="form-phone">Phone Number</label>
+                                    <input type="tel" id="form-phone" required placeholder="323-750-2550" 
+                                           class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-bold uppercase text-slate-500" for="form-quote-details">Locked Calculator Costing Details</label>
+                                <input type="text" id="form-quote-details" readonly value="No parameters locked yet. Use pricing tool above to apply." 
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-100 text-xs font-mono text-slate-500 focus:outline-none">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-bold uppercase text-slate-500" for="form-notes">Project Details / Structural Requests</label>
+                                <textarea id="form-notes" rows="4" placeholder="Describe package size, expected weight, special design elements (windows, sliding trays)..." 
+                                          class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-slate-900 hover:bg-brand-accent text-white font-bold rounded-xl transition-all shadow-lg text-center flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5 text-brand-gold"></i>
+                                Submit Custom Packaging Inquiry
+                            </button>
+                        </form>
+
+                        <!-- Beautiful interactive Toast confirmation -->
+                        <div id="form-toast" class="hidden mt-6 bg-emerald-50 border border-emerald-200 text-emerald-800 p-5 rounded-2xl flex items-start gap-3 animate-fadeIn">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-600 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-extrabold text-sm">Quote Request Received!</h4>
+                                <p class="text-xs text-emerald-700/85 mt-1">Our Los Angeles Structural Engineering Department has received your parameters and notes. A design specialist will review your specifications and contact you shortly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="bg-brand-deep text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Branding and tagline -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white rounded-lg p-1.5 flex items-center justify-center">
+                            <!-- Minimal logo -->
+                            <svg viewBox="0 0 100 100" class="w-full h-full">
+                                <polygon points="50,15 15,35 50,55 85,35" fill="#0F172A" />
+                                <polygon points="15,35 50,55 50,90 15,70" fill="#D97706" />
+                                <polygon points="50,55 85,35 85,70 50,90" fill="#F59E0B" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-extrabold text-white text-base">Advance Paper Box</h4>
+                            <p class="text-[10px] text-slate-400 uppercase tracking-widest leading-none">Est. 1922</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">
+                        Designers, manufacturers, and printers of high-end folding cartons, setup boxes, rigid sleeves, and thermal plastics.
+                    </p>
+                    <div class="text-[11px] text-slate-500 font-semibold italic">"More than a box company"</div>
+                </div>
+
+                <!-- Products column -->
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Manufacturing Services</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#products" class="hover:text-brand-gold">Custom Folding Cartons</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold">Setup / Rigid Boxes</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold">Thermal Plastics Forming</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold">Foil Hot-Stamping & Embossing</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold">Direct Acetate Windows</a></li>
+                    </ul>
+                </div>
+
+                <!-- Technical column -->
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Certifications & Tech</h5>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> FSC® Certified</span></li>
+                        <li><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> SFI® Sourced Fiber</span></li>
+                        <li><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> G7 Master Calibration</span></li>
+                        <li><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full"></span> ISO 9001 Management</span></li>
+                        <li><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span> Carbon Neutral Policy</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact column -->
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider">Corporate Office</h5>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">
+                        Advance Paper Box Co.<br>
+                        Los Angeles Facility, CA<br>
+                        Tel: <a href="tel:13237502550" class="text-white hover:text-brand-gold font-bold">1-323-750-2550</a>
+                    </p>
+                    <div class="text-[10px] text-slate-500">
+                        © 2026 Advance Paper Box Co. All Rights Reserved. Built with pride in California.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App / Logic Script -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Track currently selected product category globally for cross-interaction linking
+        let currentActiveCategory = 'cosmetics';
+
+        // Mobile Menu toggle helper
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        }
+
+        // Interactive Showcase products dataset
+        const productsData = {
+            cosmetics: {
+                title: "Health & Beauty Luxury Boxes",
+                badge: "Cosmetics & Beauty",
+                description: "Advance Paper Box is a leader in designing and producing upscale packaging for major cosmetics brands since 1922. Our award-winning packaging designs are custom produced to fit the unique needs of your product, and our team is dedicated to assuring that its packaging meets your highest standards.",
+                features: ["Foil Hot Stamping", "Heavyweight Rigid Dividers", "Acetate Display Windows", "Custom Soft-Touch Coatings", "Dual tuck-end or sliding trays", "High-caliper solid bleach sulfate (SBS)"],
+                recommendation: "Premium Solid Bleached Sulfate (SBS) • 16pt - 24pt Thickness",
+                spec: "Maximum Aesthetic Appeal",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-brand-gold" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Cosmetic Tray base -->
+                    <polygon points="40,150 100,175 160,150 160,110 100,135 40,110" stroke="#D97706" fill="rgba(217, 119, 6, 0.05)" />
+                    <!-- Inside tray compartment dividers -->
+                    <line x1="80" y1="140" x2="80" y2="162" stroke="#F59E0B" />
+                    <line x1="120" y1="140" x2="120" y2="162" stroke="#F59E0B" />
+                    <!-- Floating Cosmetic Bottle overlay simulated in clean lines -->
+                    <rect x="85" y="70" width="30" height="55" rx="5" stroke="#0F172A" fill="white" stroke-width="1.5"/>
+                    <rect x="95" y="55" width="10" height="15" rx="1" stroke="#0F172A" fill="#F59E0B"/>
+                    <!-- Decorative sparkle -->
+                    <path d="M150,50 L153,58 L161,61 L153,64 L150,72 L147,64 L139,61 L147,58 Z" fill="#F59E0B" stroke="none" />
+                </svg>
+                `
+            },
+            folding: {
+                title: "Custom Designed Folding Cartons",
+                badge: "Folding Cartons",
+                description: "Our signature item. Highly cost-effective and perfectly optimized for high-speed automated packaging lines. Includes custom shapes, sizes, auto-bottom structures, and detailed acetate windows for structural versatility.",
+                features: ["Auto-bottom lock structures", "SFI-certified sustainable card", "High-speed 8-color printing", "Precision window patching", "Easy-tear structural tabs", "Direct blistering cards compatible"],
+                recommendation: "Clay-Coated Newsback (CCNB) or Folding Boxboard (FBB)",
+                spec: "Maximum Value & Automation Speed",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-indigo-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Standard folding product carton -->
+                    <polygon points="50,150 100,170 150,150 150,80 100,100 50,80" stroke="#4F46E5" fill="rgba(79, 70, 229, 0.05)" />
+                    <!-- Top folding lid -->
+                    <polygon points="100,100 150,80 100,60 50,80" stroke="#4F46E5" />
+                    <polygon points="50,80 100,60 100,40 50,60" stroke="#818CF8" />
+                    <!-- Dotted window cut pattern indicators -->
+                    <rect x="75" y="105" width="50" height="30" rx="3" stroke="#4F46E5" stroke-dasharray="3" />
+                </svg>
+                `
+            },
+            rigid: {
+                title: "Exquisite Hand-Wrapped Rigid Boxes",
+                badge: "Rigid / Setup",
+                description: "Representing the absolute pinnacle of premium packaging. Rigid (or setup) boxes arrive completed, fully constructed, and ready to pack. Designed with durable chipboard interiors wrapped in fine artisan papers.",
+                features: ["Indestructible solid chipboard", "Custom book-style sliding sleeves", "Magnetic close lids", "Embossed/Debossed branding logo", "Velvet inserts & custom foam", "Hand-finished corners"],
+                recommendation: "Heavy Solid Chipboard (50pt - 80pt) wrapped in Fine Art Textures",
+                spec: "Maximum Durability & Unboxing Premium",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-slate-800" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Base box bottom -->
+                    <polygon points="40,150 100,175 160,150 160,110 100,135 40,110" stroke="#1E293B" fill="rgba(30, 41, 59, 0.05)" />
+                    <!-- Lift-off Box Lid suspended above base to show setup construction -->
+                    <polygon points="40,100 100,125 160,100 160,70 100,95 40,70" stroke="#475569" fill="rgba(71, 85, 105, 0.1)" />
+                    <polygon points="40,70 100,45 160,70 100,95" stroke="#475569" />
+                    <!-- Connection indicator lines -->
+                    <line x1="40" y1="110" x2="40" y2="100" stroke="#CBD5E1" stroke-dasharray="2" />
+                    <line x1="160" y1="110" x2="160" y2="100" stroke="#CBD5E1" stroke-dasharray="2" />
+                </svg>
+                `
+            },
+            pharmaceutical: {
+                title: "Strict Compliance Pharmaceutical Cartons",
+                badge: "Pharmaceutical",
+                description: "Advance Paper Box has the ability to meet the strict demands of the pharmaceutical industry. We are ISO 9001 certified, G7 certified, and offer FSC® and SFI® certified paperboard.",
+                features: ["Steri-shield coating options", "Tamper-evident score designs", "Braille embossing capabilities", "Ultra-high legible print tracking", "Anti-counterfeiting ink options", "Auto-bottom for rapid cartoning"],
+                recommendation: "Premium SBS or Solid Bleached Sulfate (Sterile Safe)",
+                spec: "Maximum Security & Accuracy Standards",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-red-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Clean medicine carton box structure -->
+                    <polygon points="60,140 100,155 140,140 140,80 100,95 60,80" stroke="#DC2626" />
+                    <polygon points="100,95 140,80 100,65 60,80" stroke="#DC2626" fill="rgba(220, 38, 38, 0.05)" />
+                    <!-- Medicine red cross compliance symbol -->
+                    <path d="M94,110 H106 V122 H114 V134 H106 V146 H94 V134 H86 V122 H94 Z" stroke="#DC2626" fill="none" stroke-width="1" />
+                </svg>
+                `
+            },
+            food: {
+                title: "Contamination-Free Food & Candy Cartons",
+                badge: "Food Products",
+                description: "We maintain the strictest production environment to make sure packaging is safe and free of contamination. Since we manufacture under ISO 9001, your packaging will be of consistent high quality and be on-time, every time.",
+                features: ["Direct food contact barriers", "Water & grease resistant liners", "Organic non-toxic soy inks", "Recyclable biodegradable films", "FSC/SFI sustainable materials", "Candies & baking products designs"],
+                recommendation: "Solid Unbleached Sulfate (SUS) with Food Safe Lining",
+                spec: "Maximum Freshness & Chemical Safe Sourcing",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Cake box with handle structure -->
+                    <polygon points="50,140 100,165 150,140 150,90 100,115 50,90" stroke="#059669" fill="rgba(5, 150, 105, 0.05)" />
+                    <!-- Fold-up handle paths -->
+                    <path d="M100,115 Q100,55 90,55 L80,55 Q100,20 100,55 Z" stroke="#059669" />
+                    <path d="M100,115 Q100,55 110,55 L120,55 Q100,20 100,55 Z" stroke="#059669" />
+                    <!-- Eco Leaf decorative graphic inside -->
+                    <path d="M100,135 Q108,125 100,115 Q92,125 100,135 Z" fill="#10B981" stroke="none" />
+                </svg>
+                `
+            },
+            entertainment: {
+                title: "Software & DVD Slipcase Rigid Sets",
+                badge: "Entertainment & Software",
+                description: "Engineered specifically for media distribution. We specialize in high-end slipcases, software sleeves, game boards, and multidisc packages that demand exact dimensions for precise fits on store shelves.",
+                features: ["Telescoping boxes structure", "Game boards design & mounting", "CD/DVD sleeve inserts", "Foil printed metallic textures", "Multi-pack rigid slipcases", "Automatic assembly compatible"],
+                recommendation: "Laminated Clay Coated (CCNB) over thick board",
+                spec: "High-Volume Precision Die Alignment",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-purple-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Slipcase shell -->
+                    <polygon points="50,160 100,180 150,160 150,90 100,110 50,90" stroke="#7C3AED" fill="rgba(124, 58, 237, 0.05)" />
+                    <polygon points="100,110 150,90 100,70 50,90" stroke="#7C3AED" />
+                    <!-- Rigid Disc holder sliding out -->
+                    <polygon points="65,115 95,127 135,115 135,55 95,67 65,55" stroke="#8B5CF6" />
+                </svg>
+                `
+            },
+            soap: {
+                title: "Artisanal Candle & Soap Craft Packaging",
+                badge: "Candles & Soap",
+                description: "Packaging sells. Let us help you design and manufacture your product's packaging in a way that makes it easy to sell to retailers and customers. With our 8 color presses, state-of-the-art Finishing Department, and our Rigid Box Division, no one can produce a higher quality product.",
+                features: ["Vapor barrier liners", "High-pigment offset ink designs", "Textured raw linen paper wrappers", "Internal cushioning tabs", "Custom window structural cutouts", "Eco-friendly recyclable waste"],
+                recommendation: "Textured Natural Kraft Board or 100% Recycled PCW",
+                spec: "Maximum Scent Preservation & Texture Quality",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Elegant hexagon shaped container structure -->
+                    <polygon points="100,30 140,50 140,90 100,110 60,90 60,50" stroke="#0D9488" fill="rgba(13, 148, 136, 0.05)" />
+                    <polygon points="100,110 140,130 140,170 100,190 60,170 60,130" stroke="#0D9488" />
+                    <line x1="60" y1="50" x2="60" y2="130" stroke="#0D9488" />
+                    <line x1="140" y1="50" x2="140" y2="130" stroke="#0D9488" />
+                    <line x1="100" y1="110" x2="100" y2="190" stroke="#0D9488" />
+                </svg>
+                `
+            },
+            plastics: {
+                title: "Thermoformed Clamshells & Blister Inserts",
+                badge: "Thermal Plastics",
+                description: "In addition to paperboard, we run dedicated thermoforming lines to design sturdy plastic inserts. Perfect for securing products snugly inside outer retail paper boxes.",
+                features: ["Crystal-clear visual displays", "Sturdy snap-closure systems", "Die-formed tray inserts", "Recycled PET material options", "Blister pack card integrations", "Extreme high impact security"],
+                recommendation: "Eco-Friendly Recycled PET (Polyethylene Terephthalate)",
+                spec: "Maximum Physical Product Protection & View",
+                svg: `
+                <svg viewBox="0 0 200 200" class="w-48 h-48 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Plastic blister shell outlines -->
+                    <rect x="50" y="50" width="100" height="100" rx="10" stroke="#2563EB" stroke-width="1.5" fill="rgba(37, 99, 235, 0.03)" />
+                    <!-- Inside bubble layer showing dynamic offset -->
+                    <rect x="65" y="65" width="70" height="70" rx="15" stroke="#60A5FA" stroke-dasharray="3" />
+                    <!-- Rounded peg holder slot -->
+                    <ellipse cx="100" cy="35" rx="10" ry="4" stroke="#2563EB" />
+                </svg>
+                `
+            }
+        };
+
+        // Activates category and builds out features list / updates structural preview SVG
+        function setActiveProduct(key) {
+            currentActiveCategory = key; // Keep record of active selection globally
+
+            // Remove active styles from all tabs
+            document.querySelectorAll('.product-tab').forEach(tab => {
+                tab.classList.remove('border-brand-accent', 'bg-amber-50/40', 'shadow-md');
+                tab.classList.add('bg-white', 'border-slate-200/80');
+            });
+
+            // Set active state to clicked tab
+            const activeTab = document.getElementById(`tab-${key}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-white', 'border-slate-200/80');
+                activeTab.classList.add('border-brand-accent', 'bg-amber-50/40', 'shadow-md');
+            }
+
+            // Retrieve data
+            const data = productsData[key];
+            if (!data) return;
+
+            // Fill text fields
+            document.getElementById('showcase-badge').innerText = data.badge;
+            document.getElementById('showcase-title').innerText = data.title;
+            document.getElementById('showcase-description').innerText = data.description;
+            document.getElementById('showcase-recommendation').querySelector('span').innerText = data.recommendation;
+            document.getElementById('showcase-spec').innerText = data.spec;
+
+            // Fill list of specifications
+            const listContainer = document.getElementById('showcase-features');
+            listContainer.innerHTML = '';
+            data.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center gap-2';
+                li.innerHTML = `
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-accent flex-shrink-0"></span>
+                    <span>${feat}</span>
+                `;
+                listContainer.appendChild(li);
+            });
+
+            // Set custom SVG inside visualization panel
+            document.getElementById('showcase-visual-container').innerHTML = data.svg;
+            lucide.createIcons();
+        }
+
+        // Set initial tab active on load
+        setActiveProduct('cosmetics');
+
+        // Automatically maps the active showcase product details to the quote estimator
+        function applyStructureToCalculator() {
+            // Mappings corresponding to calculator configurations
+            const mappingDatabase = {
+                cosmetics: { style: 'rigid', industry: 'cosmetic' },
+                folding: { style: 'folding', industry: 'general' },
+                rigid: { style: 'rigid', industry: 'general' },
+                pharmaceutical: { style: 'folding', industry: 'pharma' },
+                food: { style: 'folding', industry: 'food' },
+                entertainment: { style: 'rigid', industry: 'general' },
+                soap: { style: 'folding', industry: 'general' },
+                plastics: { style: 'thermo', industry: 'general' }
+            };
+
+            const setting = mappingDatabase[currentActiveCategory];
+            if (setting) {
+                document.getElementById('calc-style').value = setting.style;
+                document.getElementById('calc-industry').value = setting.industry;
+                
+                // Trigger recalculation immediately
+                calculatePrice();
+
+                // Smoothly scroll to the calculator section
+                document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+
+        // Interactive Box Die-Line Blueprint Generator Logic
+        function updateDieline() {
+            // Grab slider numeric inputs
+            const L = parseFloat(document.getElementById('slide-length').value);
+            const W = parseFloat(document.getElementById('slide-width').value);
+            const D = parseFloat(document.getElementById('slide-depth').value);
+
+            // Display values in text spans next to sliders
+            document.getElementById('val-length').innerText = L.toFixed(1);
+            document.getElementById('val-width').innerText = W.toFixed(1);
+            document.getElementById('val-depth').innerText = D.toFixed(1);
+
+            // Calculate estimated area flat
+            const flatWidth = (2 * L) + (2 * W) + 1.5;
+            const flatHeight = W + D + 2.0;
+            const flatArea = flatWidth * flatHeight;
+            document.getElementById('val-die-area').innerText = `${flatArea.toFixed(1)} sq. inches (${(flatArea/144).toFixed(2)} sq. ft.)`;
+
+            // Draw Blueprint SVG dynamically to reflect L, W, D
+            const svg = document.getElementById('blueprint-svg');
+            
+            // Map inputs to scale inside coordinate space
+            const scale = 250 / ((2 * L) + (2 * W) + 2);
+            
+            const startX = 50;
+            const startY = 80;
+
+            const l_px = L * scale;
+            const w_px = W * scale;
+            const d_px = D * scale;
+            const flap_px = (W * 0.45) * scale;
+            const glueFlange_px = 0.5 * scale;
+
+            svg.innerHTML = `
+                <!-- Blue Grid Background Lines simulating layout template -->
+                <line x1="25" y1="0" x2="25" y2="350" stroke="#1e293b" stroke-width="0.5" />
+                <line x1="125" y1="0" x2="125" y2="350" stroke="#1e293b" stroke-width="0.5" />
+                <line x1="225" y1="0" x2="225" y2="350" stroke="#1e293b" stroke-width="0.5" />
+                <line x1="325" y1="0" x2="325" y2="350" stroke="#1e293b" stroke-width="0.5" />
+                <line x1="425" y1="0" x2="425" y2="350" stroke="#1e293b" stroke-width="0.5" />
+                
+                <!-- Main Folding Score Lines (Dashed Blue Paths) -->
+                <!-- Verticals -->
+                <line x1="${startX + w_px}" y1="${startY}" x2="${startX + w_px}" y2="${startY + d_px}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+                <line x1="${startX + w_px + l_px}" y1="${startY}" x2="${startX + w_px + l_px}" y2="${startY + d_px}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+                <line x1="${startX + (2*w_px) + l_px}" y1="${startY}" x2="${startX + (2*w_px) + l_px}" y2="${startY + d_px}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+                <line x1="${startX + (2*w_px) + (2*l_px)}" y1="${startY}" x2="${startX + (2*w_px) + (2*l_px)}" y2="${startY + d_px}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+                
+                <!-- Horizontals -->
+                <line x1="${startX}" y1="${startY}" x2="${startX + (2*w_px) + (2*l_px)}" y2="${startY}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+                <line x1="${startX}" y1="${startY + d_px}" x2="${startX + (2*w_px) + (2*l_px)}" y2="${startY + d_px}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3" />
+
+                <!-- Outer Cut Lines (Solid Green) -->
+                <!-- Left Glue Flange -->
+                <path d="M ${startX} ${startY} 
+                         L ${startX - glueFlange_px} ${startY + 5} 
+                         L ${startX - glueFlange_px} ${startY + d_px - 5} 
+                         L ${startX} ${startY + d_px} Z" stroke="#10b981" stroke-width="2" fill="none" />
+                
+                <!-- Top Panel Flaps & Dust Flaps (Red and Green indicators) -->
+                <!-- Panel 1 Dust flap (Left side) -->
+                <path d="M ${startX} ${startY} L ${startX + (w_px*0.2)} ${startY - flap_px} L ${startX + (w_px*0.8)} ${startY - flap_px} L ${startX + w_px} ${startY} Z" stroke="#ef4444" stroke-width="1.5" fill="rgba(239, 68, 68, 0.05)" />
+                <!-- Panel 2 Main top tuck flap -->
+                <path d="M ${startX + w_px} ${startY} L ${startX + w_px} ${startY - flap_px - 10} Q ${startX + w_px + (l_px*0.5)} ${startY - flap_px - 25} ${startX + w_px + l_px} ${startY - flap_px - 10} L ${startX + w_px + l_px} ${startY} Z" stroke="#10b981" stroke-width="2" fill="none" />
+                <!-- Panel 3 Dust flap -->
+                <path d="M ${startX + w_px + l_px} ${startY} L ${startX + w_px + l_px + (w_px*0.2)} ${startY - flap_px} L ${startX + (2*w_px) + l_px - (w_px*0.2)} ${startY - flap_px} L ${startX + (2*w_px) + l_px} ${startY} Z" stroke="#ef4444" stroke-width="1.5" fill="rgba(239, 68, 68, 0.05)" />
+                <!-- Panel 4 secondary closure tuck flap -->
+                <path d="M ${startX + (2*w_px) + l_px} ${startY} L ${startX + (2*w_px) + l_px} ${startY - flap_px - 10} Q ${startX + (2*w_px) + l_px + (l_px*0.5)} ${startY - flap_px - 25} ${startX + (2*w_px) + (2*l_px)} ${startY - flap_px - 10} L ${startX + (2*w_px) + (2*l_px)} ${startY} Z" stroke="#10b981" stroke-width="2" fill="none" />
+
+                <!-- Bottom Panel Flaps (Mirror reflections) -->
+                <!-- Panel 1 Bottom Dust flap -->
+                <path d="M ${startX} ${startY + d_px} L ${startX + (w_px*0.2)} ${startY + d_px + flap_px} L ${startX + (w_px*0.8)} ${startY + d_px + flap_px} L ${startX + w_px} ${startY + d_px} Z" stroke="#ef4444" stroke-width="1.5" fill="rgba(239, 68, 68, 0.05)" />
+                <!-- Panel 2 Main bottom tuck flap -->
+                <path d="M ${startX + w_px} ${startY + d_px} L ${startX + w_px} ${startY + d_px + flap_px + 10} Q ${startX + w_px + (l_px*0.5)} ${startY + d_px + flap_px + 25} ${startX + w_px + l_px} ${startY + d_px + flap_px + 10} L ${startX + w_px + l_px} ${startY + d_px} Z" stroke="#10b981" stroke-width="2" fill="none" />
+                <!-- Panel 3 Bottom Dust flap -->
+                <path d="M ${startX + w_px + l_px} ${startY + d_px} L ${startX + w_px + l_px + (w_px*0.2)} ${startY + d_px + flap_px} L ${startX + (2*w_px) + l_px - (w_px*0.2)} ${startY + d_px + flap_px} L ${startX + (2*w_px) + l_px} ${startY + d_px} Z" stroke="#ef4444" stroke-width="1.5" fill="rgba(239, 68, 68, 0.05)" />
+                <!-- Panel 4 bottom closure tuck flap -->
+                <path d="M ${startX + (2*w_px) + l_px} ${startY + d_px} L ${startX + (2*w_px) + l_px} ${startY + d_px + flap_px + 10} Q ${startX + (2*w_px) + l_px + (l_px*0.5)} ${startY + d_px + flap_px + 25} ${startX + (2*w_px) + (2*l_px)} ${startY + d_px + flap_px + 10} L ${startX + (2*w_px) + (2*l_px)} ${startY + d_px} Z" stroke="#10b981" stroke-width="2" fill="none" />
+
+                <!-- Solid Outer cuts on left/right edges -->
+                <line x1="${startX}" y1="${startY}" x2="${startX}" y2="${startY + d_px}" stroke="#10b981" stroke-width="2" />
+                <line x1="${startX + (2*w_px) + (2*l_px)}" y1="${startY}" x2="${startX + (2*w_px) + (2*l_px)}" y2="${startY + d_px}" stroke="#10b981" stroke-width="2" />
+                
+                <!-- Dimension overlay label text -->
+                <text x="${startX + (w_px/2)}" y="${startY + (d_px/2) + 5}" fill="#64748b" font-family="monospace" font-size="9" text-anchor="middle">W: ${W.toFixed(1)}"</text>
+                <text x="${startX + w_px + (l_px/2)}" y="${startY + (d_px/2) + 5}" fill="#64748b" font-family="monospace" font-size="9" text-anchor="middle">L: ${L.toFixed(1)}"</text>
+                <text x="${startX + (2*w_px) + (2*l_px) + 15}" y="${startY + (d_px/2) + 5}" fill="#a1a1aa" font-family="monospace" font-size="9" text-anchor="start">D: ${D.toFixed(1)}"</text>
+                <line x1="${startX + (2*w_px) + (2*l_px) + 5}" y1="${startY}" x2="${startX + (2*w_px) + (2*l_px) + 5}" y2="${startY + d_px}" stroke="#a1a1aa" stroke-width="0.75" />
+            `;
+        }
+
+        // Initialize die-line visualizer state
+        updateDieline();
+
+
+        // Premium Costing Calculator Multi-Step Logic
+        function calculatePrice() {
+            const style = document.getElementById('calc-style').value;
+            const industry = document.getElementById('calc-industry').value;
+            const material = document.getElementById('calc-material').value;
+            const quantity = parseInt(document.getElementById('calc-qty').value);
+
+            // Update range slider text readouts
+            document.getElementById('lbl-qty').innerText = `${quantity.toLocaleString()} pcs`;
+
+            // Core base cost models
+            let basePrice = 0.25; // standard folding
+            if (style === 'rigid') basePrice = 2.40;
+            else if (style === 'thermo') basePrice = 0.35;
+            else if (style === 'corrugated') basePrice = 0.65;
+
+            // Specialty industry additions
+            let industryAdd = 0.00;
+            if (industry === 'cosmetic') industryAdd = 0.35; // foil stamps/soft touch etc.
+            else if (industry === 'pharma') industryAdd = 0.12; // certified checks
+            else if (industry === 'food') industryAdd = 0.08; // food coating
+
+            // Materials additions
+            let matAdd = 0.00;
+            if (material === 'recycled') matAdd = 0.05;
+            else if (material === 'premium') matAdd = 0.15;
+
+            // Volume-scaling discount tier algorithms (economy of scale)
+            let discount = 0.00;
+            if (quantity >= 50000) discount = 0.65; // 65% off base scaling for huge enterprise run
+            else if (quantity >= 25000) discount = 0.50;
+            else if (quantity >= 10000) discount = 0.35;
+            else if (quantity >= 5000) discount = 0.20;
+            else if (quantity >= 2000) discount = 0.10;
+            else discount = 0.00;
+
+            // Sum elements
+            const itemBaseCost = basePrice;
+            const itemIndCost = industryAdd;
+            const itemMatCost = matAdd;
+
+            const preDiscountUnit = itemBaseCost + itemIndCost + itemMatCost;
+            const finalUnitCost = preDiscountUnit * (1.0 - discount);
+            const totalCost = finalUnitCost * quantity;
+
+            // Render live pricing onto Invoice display elements
+            document.getElementById('invoice-base').innerText = `$${itemBaseCost.toFixed(2)}`;
+            document.getElementById('invoice-industry').innerText = `$${itemIndCost.toFixed(2)}`;
+            document.getElementById('invoice-material').innerText = `$${itemMatCost.toFixed(2)}`;
+            document.getElementById('invoice-discount').innerText = `-${(discount * 100).toFixed(0)}%`;
+
+            document.getElementById('lbl-unit-price').innerText = `$${finalUnitCost.toFixed(3)}`;
+            document.getElementById('lbl-total-price').innerText = `$${totalCost.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+        }
+
+        // Initialize calculator values
+        calculatePrice();
+
+        // Lock & Apply Quote selections to Contact Inquiry Form details field
+        function applyQuoteToContact() {
+            const style = document.getElementById('calc-style').options[document.getElementById('calc-style').selectedIndex].text;
+            const industry = document.getElementById('calc-industry').options[document.getElementById('calc-industry').selectedIndex].text;
+            const qty = document.getElementById('calc-qty').value;
+            const unitPrice = document.getElementById('lbl-unit-price').innerText;
+            const totalPrice = document.getElementById('lbl-total-price').innerText;
+
+            const formattedString = `Quote Locked: ${qty} pcs of [${style}] styled for [${industry}] (Est Unit: ${unitPrice} | Est Total: ${totalPrice})`;
+            
+            document.getElementById('form-quote-details').value = formattedString;
+            
+            // Auto smooth scroll to Contact panel
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        // Interactive Eco Environmental Meter Calculation
+        function calculateEcoImpact() {
+            const qty = parseInt(document.getElementById('eco-qty').value);
+            const mat = document.getElementById('eco-mat').value;
+
+            document.getElementById('eco-lbl-qty').innerText = `${qty.toLocaleString()} units`;
+
+            let materialMultiplier = 1.0;
+            let carbonMultiplier = 1.0;
+            let matLabel = "100% Recycled Kraft";
+
+            if (mat === 'recycled') {
+                materialMultiplier = 1.25;
+                carbonMultiplier = 1.15;
+                matLabel = "100% Recycled PCW";
+            } else if (mat === 'standard') {
+                materialMultiplier = 0.65;
+                carbonMultiplier = 0.55;
+                matLabel = "Standard SFI Kraft";
+            } else {
+                materialMultiplier = 0.15; // Virgin fibers preserve less immediate trees but still replanted
+                carbonMultiplier = 0.10;
+                matLabel = "Virgin SBS Board";
+            }
+
+            document.getElementById('eco-lbl-mat').innerText = matLabel;
+
+            // Mathematical modeling for savings
+            const treesSaved = (qty * 0.001) * materialMultiplier;
+            const carbonSaved = (qty * 0.0001) * carbonMultiplier;
+
+            document.getElementById('eco-saved-trees').innerText = treesSaved.toFixed(2);
+            document.getElementById('eco-saved-carbon').innerText = `${carbonSaved.toFixed(2)} Tons`;
+        }
+
+        // Run initially
+        calculateEcoImpact();
+
+
+        // Contact Form Submission Process - Now Launches System Native Email Client populated with all details
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            // Gather values directly from the DOM form
+            const name = document.getElementById('form-name').value;
+            const company = document.getElementById('form-company').value;
+            const email = document.getElementById('form-email').value;
+            const phone = document.getElementById('form-phone').value;
+            const quoteDetails = document.getElementById('form-quote-details').value;
+            const notes = document.getElementById('form-notes').value;
+
+            // Target recipient 
+            const recipient = "sales@advancepaperbox.com";
+            const subject = `Custom Packaging Inquiry - ${company}`;
+            
+            // Structure body text neatly
+            const body = `Hello Advance Paper Box Team,
+
+I would like to submit a request for a custom packaging design. Here are the parameters for our brand:
+
+--------------------------------------------------
+CONTACT INFORMATION
+--------------------------------------------------
+Contact Name: ${name}
+Company Name: ${company}
+Email Address: ${email}
+Phone Number: ${phone}
+
+--------------------------------------------------
+ESTIMATED COSTING SCHEME (IF LOCKED)
+--------------------------------------------------
+${quoteDetails}
+
+--------------------------------------------------
+STRUCTURAL DESCRIPTION & ADDITIONAL NOTES
+--------------------------------------------------
+${notes ? notes : 'No additional custom structural notes specified.'}
+
+Thank you,
+${name}
+${company}`;
+
+            // Create mailto target string and direct user system client
+            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoUrl;
+
+            // Show toast message confirmation smoothly as feedback
+            const toast = document.getElementById('form-toast');
+            toast.classList.remove('hidden');
+            
+            // Clear out form parameters after action
+            document.getElementById('contactForm').reset();
+            document.getElementById('form-quote-details').value = "No parameters locked yet. Use pricing tool above to apply.";
+            
+            // Smooth scroll to view confirmation feedback
+            toast.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        // =========================================================================
+        // GEMINI AI ADVISOR CHAT INTERACTION (Direct non-streaming API integration)
+        // =========================================================================
+        
+        const apiKey = ""; // Left empty - provided at runtime by the environment sandbox
+        
+        // Dynamic exponential backoff fetch handler
+        async function robustGenerateContent(prompt, systemInstruction) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = {
+                contents: [{ parts: [{ text: prompt }] }],
+                systemInstruction: { parts: [{ text: systemInstruction }] }
+            };
+
+            let delay = 1000;
+            for (let i = 0; i < 5; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload)
+                    });
+                    if (response.ok) {
+                        const data = await response.json();
+                        return data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    }
+                } catch (e) {
+                    // Fail silently, retry loop continues
+                }
+                await new Promise(r => setTimeout(r, delay));
+                delay *= 2; // Exponential increase
+            }
+            throw new Error("Unable to connect to AI engine after retries.");
+        }
+
+        // Send a custom prefilled question button template directly
+        function sendPrefillQuestion(questionText) {
+            document.getElementById('chatInput').value = questionText;
+            handleSendChat();
+        }
+
+        // Main chat delivery controller
+        async function handleSendChat() {
+            const input = document.getElementById('chatInput');
+            const messageText = input.value.trim();
+            if (!messageText) return;
+
+            // Clear input box
+            input.value = "";
+
+            // Render User's message inside history feed
+            appendMessage('user', messageText);
+
+            // Add Typing Indicator element
+            const typingIndicator = appendTypingIndicator();
+
+            // Set up background expert system personality context
+            const systemPrompt = `
+                You are APEX, the senior virtual packaging structural engineer and production specialist at Advance Paper Box Co. 
+                Our brand has been designing and producing premium packaging in Southern California since 1922.
+                We have over 500,000 square feet of facilities, G7 Color Master calibrations, ISO 9001 certification, and FSC/SFI chain-of-custody paperboard access.
+                We specialize in custom folding cartons, heavyweight hand-wrapped rigid/setup boxes, and thermoformed blister inserts.
+                Be highly expert, friendly, professional, and direct. Focus on technical recommendations like paper caliper sizes (16pt to 24pt CCNB/SBS), die lines, coating finishes, sustainable soy-inks, and structural efficiency.
+                Limit answers to 2-3 highly packed paragraphs max. Use bullet points for structural clarity when comparing materials or certifications.
+            `;
+
+            try {
+                const aiResultText = await robustGenerateContent(messageText, systemPrompt);
+                
+                // Remove indicator and append complete AI response
+                typingIndicator.remove();
+                appendMessage('apex', aiResultText);
+            } catch (err) {
+                typingIndicator.remove();
+                appendMessage('apex', "I apologize, our technical engineering network is currently experiencing heavy load. Please call our Los Angeles plant directly at 1-323-750-2550 to speak with a structural engineer immediately!");
+            }
+        }
+
+        // Helper function to render messages into chat history feed
+        function appendMessage(sender, text) {
+            const container = document.getElementById('chatHistory');
+            const wrapper = document.createElement('div');
+            
+            if (sender === 'user') {
+                wrapper.className = 'flex items-start justify-end gap-3 max-w-[85%] ml-auto';
+                wrapper.innerHTML = `
+                    <div class="bg-brand-accent text-slate-950 p-4 rounded-2xl rounded-tr-none text-sm shadow-md font-medium">
+                        ${text.replace(/\n/g, '<br>')}
+                    </div>
+                `;
+            } else {
+                wrapper.className = 'flex items-start gap-3 max-w-[85%] animate-fadeIn';
+                wrapper.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-slate-950 flex items-center justify-center flex-shrink-0 text-brand-gold border border-slate-800">
+                        <i data-lucide="cpu" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-slate-950/60 text-slate-300 p-4 rounded-2xl rounded-tl-none border border-slate-800 text-sm space-y-2">
+                        ${formatAIResponseToHTML(text)}
+                    </div>
+                `;
+            }
+
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+            lucide.createIcons();
+        }
+
+        // Small helper to make bot text lists and paragraphs look excellent
+        function formatAIResponseToHTML(text) {
+            // Replace markdown bold tags with strong elements
+            let html = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            // Support simple bullet points formatting
+            html = html.replace(/^\*\s(.*)$/gm, '<li class="ml-4 list-disc">$1</li>');
+            // line breaks
+            html = html.replace(/\n/g, '<br>');
+            return html;
+        }
+
+        // Render loading state
+        function appendTypingIndicator() {
+            const container = document.getElementById('chatHistory');
+            const wrapper = document.createElement('div');
+            wrapper.className = 'flex items-start gap-3 max-w-[85%] animate-pulse';
+            wrapper.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-slate-950 flex items-center justify-center flex-shrink-0 text-brand-gold border border-slate-800">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div class="bg-slate-950/40 text-slate-500 p-4 rounded-2xl rounded-tl-none border border-slate-800 text-xs italic flex items-center gap-2">
+                    <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-bounce"></span>
+                    <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-bounce [animation-delay:0.2s]"></span>
+                    <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-bounce [animation-delay:0.4s]"></span>
+                    APEX is analyzing CAD specifications...
+                </div>
+            `;
+            container.appendChild(wrapper);
+            container.scrollTop = container.scrollHeight;
+            lucide.createIcons();
+            return wrapper;
+        }
+    </script>
+</body>
+</html>
